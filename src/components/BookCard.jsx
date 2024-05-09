@@ -1,5 +1,4 @@
-// bileşen prop alırken deconstruct yöntemi
-// gelen propun değerlerine direkt erişmeye yarar
+
 const BookCard = ({
     book,
     handleModal,

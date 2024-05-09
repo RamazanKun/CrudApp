@@ -4,8 +4,7 @@ import DeleteModal from './components/DeleteModal';
 import EditModal from './components/EditModal';
 import { toast } from 'react-toastify';
 import { v4 } from 'uuid';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
  
@@ -61,18 +60,18 @@ function App() {
     setShowDeleteModal(true);
   };
 
-  // silme işlemini yapar
+ 
   const handleDelete = () => {
-    // silincek id'ye eşit olmayanları al ve bir diziye aktar
+   
     const filred = books.filter((book) => book.id !== deleteId);
 
-    // state'i güncelleme
+   
     setBooks(filred);
 
-    // modal'ı kapat
+   
     setShowDeleteModal(false);
 
-    // bildirim ver
+   
     toast.error('Kitap Başarıyla Silindi', {
       autoClose: 2000,
     });
